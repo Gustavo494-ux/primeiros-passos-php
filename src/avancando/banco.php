@@ -17,6 +17,9 @@ $contasCorrentes= [
     ],
 ];
 
+titularComLetrasMaiusculas($contasCorrentes);
+removerConta($contasCorrentes[2]);
 foreach ($contasCorrentes as $cpf => $conta) {
-    echo "$cpf {$conta['titular']} {$conta['saldo']}".PHP_EOL;
+    exibirMensagem(
+        " $cpf $titular $saldo");
 }

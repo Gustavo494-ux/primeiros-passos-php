@@ -20,3 +20,11 @@ function depositar(float $conta, float $valorADepositar){
     $conta['saldo'] += $valorADepositar;
     return $conta;
 }
+
+function titularComLetrasMaiusculas(array $conta){
+    $conta['titular'] = strtoupper($conta['titular']);
+}
+
+function removerConta(array &$conta){
+    unset($conta);
+}
